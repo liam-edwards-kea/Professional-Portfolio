@@ -1,0 +1,86 @@
+h1 {
+    font-family: 'Montserrat';
+    color: #fff;
+    font-weight: 600;
+    font-size: 4rem;
+    padding: 5rem;
+    display: inline-block;
+    margin-top: 35vh;
+    z-index: 10;
+}
+
+.cover {
+    background-color: #000;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.BG {
+    background: url("images/IMG_1386.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.box {
+    background-color: darkcyan;
+    padding: 1rem;
+    height: 50vh;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px, auto;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header1 . . about"
+        "animation animation video video"
+        "VR VR VR VR";
+}
+
+.animation {
+    grid-area: animation;
+    margin-top: 100px;
+}
+
+.video {
+    grid-area: video;
+    margin-top: 100px;
+}
+
+.VR {
+    grid-area: VR;
+    background-image: url(images/Screenshot%202020-02-08%20at%2021.16.21.png);
+}
+
+.header1 {
+    grid-area: header1;
+    float: left;
+    color: #000;
+    font-family: 'montserrat';
+    padding: 3rem 0 0 3rem;
+    font-size: 30px;
+}
+
+.about {
+    grid-area: about;
+    float: right;
+    color: #000;
+    font-family: 'montserrat';
+    padding: 3rem 0 0 0;
+    font-size: 30px;
+}
