@@ -9,13 +9,6 @@ h1 {
     z-index: 10;
 }
 
-.textWithBlurredBg h3 {
-    font-family: 'Montserrat';
-    color: #fff;
-    font-weight: 600;
-    font-size: 70px;
-}
-
 .cover {
     background-color: #000;
     min-height: 100%;
@@ -71,7 +64,7 @@ h1 {
     grid-area: header1;
     text-align: center;
     color: #000;
-    font-family: 'montserrat';
+    font-family: 'Montserrat';
     padding: 3rem 0 0 3rem;
     font-size: 30px;
 }
@@ -80,7 +73,7 @@ h1 {
     grid-area: about;
     text-align: center;
     color: #000;
-    font-family: 'montserrat';
+    font-family: 'Montserrat';
     padding: 3rem 0 0 0;
     font-size: 30px;
 }
@@ -95,11 +88,11 @@ main {
 }
 
 #header {
-    padding: 1.5rem;
+    padding: 0;
     text-align: center;
-    background: #333;
-    color: #fff;
-    z-index: 1;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 30px;
 }
 
 #header h2 {
@@ -108,6 +101,13 @@ main {
     display: inline-block;
     padding-right: 1rem;
     padding-left: 1rem;
+}
+
+.caption {
+    text-align: center;
+    color: #000;
+    z-index: 1;
+    font-family: 'Montserrat';
 }
 
 img {
@@ -140,14 +140,88 @@ img {
 }
 
 .textWithBlurredBg:hover img {
-    filter: blur(2px) brightness(50%);
+    filter: blur(1px) brightness(50%);
+    background-color: blue;
     transition: .3s;
 }
 
-.textWithBlurredBg p {
-    font-family: 'helvetica';
-    font-weight: 500;
-    font-size: 1.1em;
+.textWithBlurredBg h3 {
+    font-family: 'Montserrat';
+    color: #fff;
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.navbar {
+    overflow: hidden;
+    height: 78px;
+    border-radius: 10px;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+    display: none;
+}
+
+.navbar a:hover {
+    color: #000;
+    transform: scale(1.1);
+    transition: .4s ease;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 1;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 40px 10px 10px 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Montserrat';
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    transform: scale(1.1);
+}
+
+.btn-close {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.TopMenuText {
+    margin-top: 5rem;
+}
+
+main {
+    transition: margin-right 0.5s;
+    width: 100%;
 }
 
 
@@ -169,4 +243,13 @@ img {
     .video {
         margin-top: 0;
     }
+
+    .side-nav a {
+        font-size: 60px;
+    }
+
+    .btn-close {
+    top: 0;
+    right: 22px;
+}
 }
