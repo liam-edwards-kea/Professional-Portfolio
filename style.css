@@ -39,6 +39,10 @@ h1 {
     z-index: -10;
 }
 
+footer {
+    padding: 2px;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -128,8 +132,10 @@ main {
     color: #000;
     z-index: 1;
     font-family: 'Montserrat';
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 6rem;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 img {
@@ -246,7 +252,7 @@ main {
 }
 
 .shadow {
-    box-shadow: 0 8px 10px -2px #888;
+    box-shadow: 0 2px 15px -2px #888;
 }
 
 .img2 {
@@ -258,8 +264,8 @@ main {
 }
 
 .images {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -305,6 +311,11 @@ main {
 
     .VR_text1 {
         display: block;
+    }
+
+    .images {
+        margin-right: 0;
+        margin-left: 0;
     }
 
 }
