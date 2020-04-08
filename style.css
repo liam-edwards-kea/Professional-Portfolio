@@ -4,9 +4,13 @@ h1 {
     font-weight: 600;
     font-size: 4rem;
     padding: 5rem;
-    display: inline-block;
-    margin-top: 35vh;
     z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline-block;
 }
 
 .cover {
@@ -87,6 +91,13 @@ h1 {
     font-size: 50px;
 }
 
+.header1:hover,
+.about:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .2s ease;
+}
+
 /* SUB PAGES */
 
 main {
@@ -143,7 +154,7 @@ img {
     color: #fff;
     text-align: center;
     opacity: 0;
-    transition: .3s;
+    transition: .1s;
 }
 
 .textWithBlurredBg:hover :not(img) {
@@ -152,7 +163,6 @@ img {
 
 .textWithBlurredBg:hover img {
     filter: blur(1px) brightness(50%);
-    background-color: blue;
     transition: .3s;
 }
 
@@ -236,7 +246,8 @@ main {
 }
 
 .shadow {
-    box-shadow: 0 8px 10px -2px #888;}
+    box-shadow: 0 8px 10px -2px #888;
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -263,8 +274,7 @@ main {
         font-size: 60px;
     }
 
-    .btn-close {
-        top: 0;
-        right: 22px;
+    .textWithBlurredBg :not(img) {
+        top: 5%;
     }
 }
