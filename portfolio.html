@@ -7,12 +7,30 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
 <body>
     <main>
+        <div class="hide">
+            <nav class="navbar">
+                <span class="open-slide">
+                    <a href="#" onclick="openSlideMenu()">
+                        <i class="fas fa-bars fa-3x"></i></a></span>
+            </nav>
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="index.html" class="TopMenuText">home</a>
+                <a href="aboutMe.html">about</a>
+                <a href="portfolio.html">portfolio</a>
+            </div>
+        </div>
+
         <div class="wrapper">
-            <span class="about">About</span><span class="header1">Portfolio</span>
+            <a href="index.html" class="about">about</a>
+            <div class="logoGrid"><a href="Animation.html">
+                    <img class="logo" src="images/LAE_logo.png"></a></div>
+            <a href="index.html" class="header1">home</a>
             <div class="animation"><a href="Animation.html">
                     <div class="textWithBlurredBg">
                         <img src="images/Screenshot%202020-02-08%20at%2021.16.21.png">
@@ -50,6 +68,4 @@
         </div>
     </main>
     <script src="javaScript.js"></script>
-</body>
-
-</html>
+</body></html>

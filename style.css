@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-family: 'Montserrat';
     color: #fff;
@@ -11,8 +15,14 @@ h1 {
     list-style: none;
 }
 
+h1:hover {
+    transform: scale(1.1);
+    transition: .4s ease-in-out;
+}
+
 a {
     text-decoration: none;
+    list-style: none;
 }
 
 
@@ -42,20 +52,36 @@ footer {
     grid-template-rows: 200px, auto;
     grid-gap: 10px;
     grid-template-areas:
-        "header1 . . about"
+        "header1 logo logo about"
         "animation animation video video"
         "VR VR VR VR"
         "clients clients fun fun";
 }
 
+.logo {
+    margin: auto;
+    padding-top: 80px;
+    width: 100px;
+    height: 80px;
+}
+
+.logoGrid {
+    grid-area: logo;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
 .animation {
     grid-area: animation;
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 .video {
     grid-area: video;
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 .VR {
@@ -72,20 +98,22 @@ footer {
 
 .header1 {
     grid-area: header1;
-    text-align: center;
+    text-align: left;
     color: #000;
     font-family: 'Montserrat';
-    padding: 3rem 0 0 3rem;
-    font-size: 50px;
+    padding: 1.5rem 0 0 2rem;
+    font-size: 40px;
+    text-decoration: none;
 }
 
 .about {
     grid-area: about;
-    text-align: center;
+    text-align: right;
     color: #000;
     font-family: 'Montserrat';
-    padding: 3rem 0 0 0;
-    font-size: 50px;
+    padding: 1.5rem 2rem 0 0;
+    font-size: 40px;
+    text-decoration: none;
 }
 
 .header1:hover,
@@ -261,6 +289,10 @@ main {
     margin-right: 70px;
 }
 
+.hide {
+    display: none;
+}
+
 /* CV page */
 
     {
@@ -279,8 +311,7 @@ main {
         grid-template-rows: 200px, auto;
         grid-gap: 10px;
         grid-template-areas:
-            "header1"
-            "about"
+            "logo"
             "animation"
             "video"
             "VR"
@@ -288,8 +319,29 @@ main {
             "fun";
     }
 
+    .header1 {
+        display: none;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+        z-index: 10;
+    }
+
+    .logo {padding-top: 0;
+    padding-bottom: 20px;
+    float: left;}
+
     .video {
         margin-top: 0;
+    }
+
+    .animation {
+        margin-top: 15px;
     }
 
     .side-nav a {
