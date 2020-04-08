@@ -249,6 +249,19 @@ main {
     box-shadow: 0 8px 10px -2px #888;
 }
 
+.img2 {
+    display: none;
+}
+
+.VR_text1 {
+    display: none;
+}
+
+.images {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 @media only screen and (max-width: 800px) {
 
     .wrapper {
@@ -277,4 +290,21 @@ main {
     .textWithBlurredBg :not(img) {
         top: 5%;
     }
+
+    .img1 {
+        display: none;
+    }
+
+    .img2 {
+        display: block;
+    }
+
+    .VR_text {
+        display: none;
+    }
+
+    .VR_text1 {
+        display: block;
+    }
+
 }
