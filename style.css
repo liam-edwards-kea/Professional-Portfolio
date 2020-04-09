@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', 'Open-sans';
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -267,11 +273,6 @@ img {
     margin-top: 5rem;
 }
 
-main {
-    transition: margin-right 0.5s;
-    width: 100%;
-}
-
 .shadow {
     box-shadow: 0 2px 15px -2px #888;
 }
@@ -332,9 +333,11 @@ main {
         z-index: 10;
     }
 
-    .logo {padding-top: 0;
-    padding-bottom: 20px;
-    float: left;}
+    .logo {
+        padding-top: 0;
+        padding-bottom: 20px;
+        float: left;
+    }
 
     .video {
         margin-top: 0;
