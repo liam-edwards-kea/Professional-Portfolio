@@ -339,13 +339,34 @@ button:hover {
     display: inline-block;
 }
 
+.icon {
+    width: 60px;
+    height: 60px;
+    padding: 2em 1em 1em 1em;
+}
+
+.icon:hover {transform: scale(1.1);}
+
+.linkedin:hover {
+    fill: #2867B2;
+}
+
+.facebook:hover {
+    fill: #4267B2;
+}
+
+.github:hover {
+    fill: #6e5494
+}
+
+.insta:hover {fill: #833AB4;}
 /* CV page */
 
-    {
+   .CV {
     width: 40%;
     margin: auto;
-    padding: 2rem;
-    margin-top: 1rem;
+    padding: 1rem;
+    margin-top: .5rem;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
