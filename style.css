@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body {
-  font-family: 'Montserrat', 'Open-sans';
+    font-family: 'Montserrat', 'Open-sans';
 }
 
 html {
@@ -159,11 +159,13 @@ main {
     color: #000;
     z-index: 1;
     font-family: 'Montserrat';
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 6rem;
     margin-left: 70px;
     margin-right: 70px;
 }
+
+/* BLURRED BG AND TEXT ON IMG */
 
 img {
     display: block;
@@ -292,6 +294,47 @@ img {
 
 .hide {
     display: none;
+}
+
+/* BUTTONS */
+
+button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 0.6em;
+    color: gray;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 40px 40px gray inset;
+    color: #fff;
+}
+
+.btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.block {
+    display: inline-block;
 }
 
 /* CV page */
