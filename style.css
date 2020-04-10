@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+@import "bourbon";
+
 body {
     font-family: 'Montserrat', 'Open-sans';
 }
@@ -302,9 +304,9 @@ button {
     box-sizing: border-box;
     appearance: none;
     background-color: transparent;
-    border: 2px solid gray;
+    border: 2px solid #000;
     border-radius: 0.6em;
-    color: gray;
+    color: #000;
     cursor: pointer;
     display: flex;
     align-self: center;
@@ -312,7 +314,7 @@ button {
     font-weight: 400;
     line-height: 1;
     margin: 20px;
-    padding: 1.2em 2.8em;
+    padding: .7em 2em;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -322,7 +324,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 0 40px 40px gray inset;
+    box-shadow: 0 0 40px 40px #000 inset;
     color: #fff;
 }
 
