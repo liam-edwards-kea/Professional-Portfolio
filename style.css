@@ -520,6 +520,7 @@ button:hover {
     }
 
     .BG {
+        background: url("images/aaron-burden-1430581-unsplash%20copy.jpg") no-repeat center center fixed;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
