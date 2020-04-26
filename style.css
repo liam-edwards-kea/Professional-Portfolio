@@ -54,6 +54,8 @@ footer {
     padding: 2px;
 }
 
+/* MAIN GRID */
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -65,6 +67,18 @@ footer {
         "VR VR VR VR"
         "clients clients fun fun";
 }
+
+/* INSTRUCTION PAGE GRID */
+
+.wrapper1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+/* LOGO MANAGING */
 
 .logo {
     margin: auto;
@@ -81,6 +95,8 @@ footer {
     align-items: center;
     align-content: center;
 }
+
+/* MAIN GRID AREAS */
 
 .animation {
     grid-area: animation;
@@ -102,6 +118,39 @@ footer {
 
 .fun {
     grid-area: fun;
+}
+
+/* INSTRUCTION PAGE GRID AREAS */
+
+.cursorImg {
+    width: 150px;
+    height: 150px;
+    justify-self: center;
+    padding: 2rem;
+}
+
+.arrowsImg {
+    width: 250px;
+    height: 245px;
+    justify-self: center;
+}
+
+.cursorText {
+    justify-self: center;
+    align-self: center;
+    width: 300px;
+}
+
+.instructions {
+    text-align: center;
+    font-size: 60px;
+}
+
+.instructionText {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .header1 {
@@ -388,7 +437,7 @@ button:hover {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
 
     .wrapper {
         display: grid;
@@ -435,7 +484,9 @@ button:hover {
         font-size: 60px;
     }
 
-    .side-nav {z-index: 10;}
+    .side-nav {
+        z-index: 10;
+    }
 
     .img1 {
         display: none;
@@ -458,7 +509,8 @@ button:hover {
         margin-left: 0;
     }
 
-    .caption, .caption1 {
+    .caption,
+    .caption1 {
         margin-left: 10px;
         margin-right: 10px;
     }
