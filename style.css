@@ -65,7 +65,8 @@ footer {
         "header1 logo logo about"
         "animation animation video video"
         "VR VR VR VR"
-        "clients clients fun fun";
+        "clients clients fun fun"
+        "vileon vileon vileon vileon";
 }
 
 /* INSTRUCTION PAGE GRID */
@@ -118,6 +119,10 @@ footer {
 
 .fun {
     grid-area: fun;
+}
+
+.vileon {
+    grid-area: vileon;
 }
 
 /* INSTRUCTION PAGE GRID AREAS */
@@ -450,7 +455,8 @@ button:hover {
             "video"
             "VR"
             "clients"
-            "fun";
+            "fun"
+            "vileon";
     }
 
     .header1 {
