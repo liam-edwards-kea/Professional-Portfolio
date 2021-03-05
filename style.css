@@ -128,6 +128,7 @@ footer {
 
 .mina {
     grid-area: mina;
+    margin-bottom: 10px;
 }
 
 /* INSTRUCTION PAGE GRID AREAS */
@@ -417,6 +418,12 @@ button:hover {
     padding: 2em 1em 1em 1em;
 }
 
+.icon1 {
+    width: 40px;
+    height: 40px;
+    padding: 0 1em 1em 1em;
+}
+
 .icon:hover {
     transform: scale(1.1);
 }
@@ -438,8 +445,14 @@ button:hover {
 }
 
 .p_line {
-    width: 50%;
-    margin-top: 4rem;
+    width: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1.2px solid black;
+}
+
+.details {
+    text-align: center;
 }
 
 /* CV page */
@@ -537,7 +550,7 @@ button:hover {
     }
 
     .BG {
-        background: url("images/aaron-burden-1430581-unsplash%20copy.jpg") no-repeat center center fixed;
+        background: url("images/BG1.jpeg") no-repeat center center fixed;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -545,9 +558,10 @@ button:hover {
     }
 
     h1 {
-        font-size: 3rem;
-        margin-left: 4rem;
-        padding: 0;
+        font-size: 2rem;
+        margin: 4rem;
+        padding: 2rem;
+        text-align: center;
     }
 
     .textWithBlurredBg h3 {
