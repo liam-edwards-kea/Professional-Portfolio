@@ -559,9 +559,17 @@ button:hover {
 
     h1 {
         font-size: 2rem;
-        margin: 4rem;
+        margin: 2rem;
         padding: 2rem;
         text-align: center;
+    }
+
+    .front_page_line {
+        width: 22%;
+        margin-top: -12rem;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+        border: 1px solid white;
     }
 
     .textWithBlurredBg h3 {
@@ -589,5 +597,3 @@ button:hover {
         filter: blur(1px) brightness(70%);
         transition: .3s;
     }
-
-}
